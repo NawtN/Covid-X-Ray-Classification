@@ -27,7 +27,7 @@ The training curves show that the model is **still learning**, with training los
 | Recall | 0.7179 | 1.0000| +0.2821 |
 | F1 | 0.5234 | 0.8041 | +0.2808 |
 
-After training on the same 79-image test set, loss dropped by `-0.5306`, accuracy improved by `+0.4051` (from `0.3544` to `0.7595`), and F1 rose by `+0.2808` (from `0.5234` to `0.8041`). This happened because training the new head over 15 epochs adapted ResNet-18 features to chest X-ray images, while the confusion matrix shows 39/39 `Normal` images predicted correctly and 21/40 `Covid` images predicted correctly (with 19 `Covid` images misclassified as `Normal`).
+After training on the same 79-image test set, loss dropped by `-0.5306`, accuracy improved by `+0.4051` (from `0.3544` to `0.7595`), and F1 increased by `+0.2808` (from `0.5234` to `0.8041`). This happened because training the new head over 15 epochs adapted ResNet-18 features to chest X-ray images, while the confusion matrix shows 39/39 `Normal` images predicted correctly and 21/40 `Covid` images predicted correctly (with 19 `Covid` images misclassified as `Normal`).
 
 ## How to run
 Group the Kaggle dataset into a single folder split into two class folders (`Covid` and `Normal`), compress it into a zip archive, and update the archive path if needed so the code extracts and splits the data (80% train / 20% test). Then open `project.ipynb` in Colab, set the runtime to GPU, run all.
