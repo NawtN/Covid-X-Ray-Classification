@@ -1,4 +1,4 @@
-# COVID-19 Chest X-Ray Classification with ResNet-18
+# COVID Chest X-Ray Classification with ResNet-18
 
 ## Project
 This project trains a binary image classifier using PyTorch and transfer learning with ResNet-18 to classify chest X-ray images into `Covid` and `Normal` classes. It could be used as an early screening-support tool by doctors and healthcare professionals, alongside students and learners exploring medical image classification (not a standalone clinical diagnosis).
